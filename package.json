@@ -38,7 +38,6 @@
     "@tailwindcss/container-queries": "^0.1.1",
     "@types/js-yaml": "^4.0.0",
     "@types/react-highlight": "^0.12.5",
-    "@types/react-typing-effect": "^2.0.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "date-fns": "^2.19.0",
@@ -59,7 +58,6 @@
     "react-instagram-embed": "^2.0.0",
     "react-schemaorg": "^1.3.1",
     "react-twitter-embed": "^3.0.3",
-    "react-typing-effect": "^2.0.5",
     "react-youtube": "^7.13.1",
     "rehype-img-size": "^1.0.1",
     "schema-dts": "^0.8.2",
@@ -105,7 +103,7 @@
     "yaml-loader": "^0.6.0"
   },
   "resolutions": {
-    "@types/react": "^17.0.38"
+    "@types/react": "17.0.40"
   },
   "private": true,
   "lint-staged": {

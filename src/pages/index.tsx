@@ -1,5 +1,5 @@
 import { Box, Button, Container, Grid, Typography } from '@mui/material';
-import ReactTypingEffect from 'react-typing-effect';
+import React from 'react';
 
 import BasicMeta from '../components/meta/BasicMeta';
 import OpenGraphMeta from '../components/meta/OpenGraphMeta';
@@ -36,11 +36,7 @@ export default function Index() {
             </Box>
             <div>ADRIG</div>
             <Typography fontWeight='normal' color='text.primary' variant='h5'>
-              <ReactTypingEffect
-                text={['solving real-world problems']}
-                speed={50}
-                staticText='We'
-              />
+              We solve real world problems
             </Typography>
             <Button
               sx={{ fontWeight: 'bold', mt: 2 }}
