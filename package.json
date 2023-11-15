@@ -12,7 +12,7 @@
     "export": "next build && next-sitemap && next export -o ./dist",
     "postbuild": "next-sitemap --config next-sitemap.config.js",
     "lint": "next lint",
-    "lint:fix": "eslint src --fix && yarn format",
+    "lint:fix": "eslint --fix && yarn format",
     "lint:strict": "eslint --max-warnings=0 src",
     "typecheck": "tsc --noEmit --incremental false",
     "test": "jest",

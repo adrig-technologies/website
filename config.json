@@ -1,11 +1,9 @@
 {
-    "base_url": "",
-    "site_title": "ADRIG AI TECH",
-    "site_description": "ADRIG AI technologies pvt. ltd.",
-    "site_keywords": [
-      "adrig"
-    ],
-    "posts_per_page": 5,
-    "twitter_account": "",
-    "github_account": ""
-  }
+  "base_url": "",
+  "site_title": "ADRIG AI TECH",
+  "site_description": "ADRIG AI technologies pvt. ltd.",
+  "site_keywords": ["adrig"],
+  "posts_per_page": 5,
+  "twitter_account": "",
+  "github_account": ""
+}

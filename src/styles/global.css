@@ -196,7 +196,7 @@
     @apply z-50 flex h-full w-full items-center justify-center rounded-md border border-gray-100 transition-all duration-300 ease-in-out;
   }
   .loader.overlay {
-    @apply absolute top-0 left-0
+    @apply absolute left-0 top-0
     justify-center;
     backdrop-filter: blur(6px);
     background-color: #0000000f;

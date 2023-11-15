@@ -1,22 +1,16 @@
-import {
-  Box,
-  Button,
-  Container,
-  Divider,
-  Grid,
-  Typography,
-} from '@mui/material';
+import { Box, Button, Container, Grid, Typography } from '@mui/material';
+import ReactTypingEffect from 'react-typing-effect';
+
 import BasicMeta from '../components/meta/BasicMeta';
 import OpenGraphMeta from '../components/meta/OpenGraphMeta';
 import TwitterCardMeta from '../components/meta/TwitterCardMeta';
-import ReactTypingEffect from 'react-typing-effect';
 
 export default function Index() {
   return (
     <>
-      <BasicMeta url={'/'} />
-      <OpenGraphMeta url={'/'} />
-      <TwitterCardMeta url={'/'} />
+      <BasicMeta url='/' />
+      <OpenGraphMeta url='/' />
+      <TwitterCardMeta url='/' />
       <Container sx={{ height: 'inherit' }}>
         <Grid
           container
@@ -43,9 +37,7 @@ export default function Index() {
             <div>ADRIG</div>
             <Typography fontWeight='normal' color='text.primary' variant='h5'>
               <ReactTypingEffect
-                text={[
-                  'solving real-world problems',
-                ]}
+                text={['solving real-world problems']}
                 speed={50}
                 staticText='We'
               />
