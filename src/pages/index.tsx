@@ -14,7 +14,7 @@ export default function Index() {
       <Container sx={{ height: 'inherit' }}>
         <Grid
           container
-          justifyContent='stretch'
+          justifyContent='end'
           alignItems='center'
           sx={{ height: '100%' }}
         >
