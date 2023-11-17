@@ -1,6 +1,7 @@
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import { AppProps } from 'next/app';
 
+import '@/styles/globals.css';
 import 'normalize.css';
 // NOTE: Do not move the styles dir to the src.
 // They are used by the Netlify CMS preview feature.
