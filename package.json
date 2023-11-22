@@ -23,7 +23,6 @@
     "format:check": "prettier -c ."
   },
   "dependencies": {
-    "@heroicons/react": "^2.0.17",
     "@hookform/resolvers": "^3.2.0",
     "@mapbox/rehype-prism": "^0.6.0",
     "@radix-ui/react-dialog": "^1.0.4",
