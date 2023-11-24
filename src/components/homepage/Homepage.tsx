@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Navbar from '../ui/navbar';
 import SectionDivider from '@/components/layout/SectionDivider';
 
 import { Button } from '../ui/button';
+import Navbar from '../ui/navbar';
 
 const Homepage = () => {
   return (
