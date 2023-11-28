@@ -103,8 +103,7 @@
     "yaml-loader": "^0.6.0"
   },
   "resolutions": {
-    "@types/react": "17.0.40",
-    "@types/react-dom": "17.0.40"
+    "@types/react": "17.0.40"
   },
   "private": true,
   "lint-staged": {
