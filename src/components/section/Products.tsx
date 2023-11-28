@@ -50,18 +50,18 @@ const Products: React.FC = () => {
 
   return (
     <Section title='PRODUCTS' className='text-white'>
-      <div className='relative mt-4 flex items-center justify-center'>
+      <div className='relative mt-4 flex h-screen items-center justify-center'>
         <button
-          className='prev-button z-10 -mr-10 rounded-full bg-green-500 p-2'
+          className='prev-button z-10 -mr-4 rounded-full bg-green-500 p-2'
           onClick={handlePrev}
         >
           <span className='text-2xl font-bold text-black'>←</span>
         </button>
-        <div className='product-carousel w-8/9 flex space-x-4 rounded-lg bg-gray-900'>
+        <div className='product-carousel w-8/9 flex h-3/4 space-x-4 overflow-x-auto bg-gray-900'>
           {productsData.map((product, index) => (
             <div
               key={index}
-              className={`product-card h-120 w-96 rounded-lg ${
+              className={`product-card h-200 relative w-96 overflow-hidden rounded-lg ${
                 index === activeIndex ? '' : 'hidden'
               }`}
             >
@@ -80,24 +80,24 @@ const Products: React.FC = () => {
                 </h3>
                 <p className='px-5 text-center'>{product.description}</p>
               </div>
+              <div className='absolute bottom-6 left-1/2 flex -translate-x-1/2  transform space-x-2'>
+                {productsData.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setActiveIndex(index)}
+                    className={`h-3 w-3 rounded-full ${
+                      index === activeIndex
+                        ? 'h-3 w-6 scale-125 transform rounded-full bg-green-500'
+                        : 'bg-green-500'
+                    }`}
+                  />
+                ))}
+              </div>
             </div>
           ))}
-          <div className='absolute bottom-2 flex space-x-2'>
-            {productsData.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setActiveIndex(index)}
-                className={`h-3 w-3 rounded-full ${
-                  index === activeIndex
-                    ? 'h-3 w-6 scale-125 transform rounded-full bg-green-500'
-                    : 'bg-green-500'
-                }`}
-              />
-            ))}
-          </div>
         </div>
         <button
-          className='next-button z-10 -ml-8 rounded-full bg-green-500 p-2'
+          className='next-button z-10 -ml-4 rounded-full bg-green-500 p-2'
           onClick={handleNext}
         >
           <span className='text-2xl font-bold text-black'>→</span>
