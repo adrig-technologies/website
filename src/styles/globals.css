@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card-bg {
+  background-color: #454545;
+}
+
+.card-des {
+  background-color: #fcffde;
+}
+
+.green-button {
+  background-color: #01ff9f;
+}
