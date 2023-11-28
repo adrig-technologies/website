@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+.card-bg {
+  background-color: #454545;
+}
+
+.card-des {
+  background-color: #fcffde;
+}
+
+.green-button {
+  background-color: #01ff9f;
+}
+
 .ivory {
   color: #a6c137;
 }
