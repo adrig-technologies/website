@@ -38,8 +38,17 @@ const AboutUs = () => {
         </div>
         <div className='mb-10 w-full px-4 lg:mb-0 lg:w-1/2'>
           <div className='flex flex-wrap'>
-            {projectStats.map(({ count, title }) => (
-              <div key={title} className='bg-black-500 ivory w-1/2 p-6'>
+            {projectStats.map(({ count, title }, index) => (
+              <div
+                key={title}
+                className={`bg-black-500 ivory w-1/2 p-6 ${
+                  index === 0
+                    ? ' border-b-4 border-r-4 border-green-500 '
+                    : index === 3
+                    ? 'border-l-4 border-t-4 border-green-500'
+                    : ''
+                }`}
+              >
                 <span>{title}</span>
                 <p className='mb-2 mt-4 text-3xl font-bold'>{count}</p>
               </div>
