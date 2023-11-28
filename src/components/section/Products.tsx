@@ -3,7 +3,7 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 
 // Import your Carousel component
-import Section from '/workspaces/website/src/components/layout/Section';
+import Section from '@/components/layout/Section';
 
 // Sample data for products
 const productsData = [
